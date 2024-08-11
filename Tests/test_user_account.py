@@ -4,7 +4,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 
-class TestLogin:
+class TestNavigationToUserAccount:
     def test_navigate_to_user_account_success(self, driver):
         driver.get(URLS["base"])
 

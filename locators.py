@@ -26,7 +26,8 @@ class LoginPageLocators:
 
 class UserAccountPageLocators:
     LOGOUT_BUTTON = (By.XPATH, "//button[text()='Выйти']")
-    CONSTRUCTOR_BUTTON = (By.XPATH, "//button[text()='Конструктор']")
+    CONSTRUCTOR_BUTTON = (By.XPATH, "//p[text()='Конструктор']")
+    STELLAR_BURGERS_LOGO = (By.XPATH, "//div[@class='AppHeader_header__logo__2D0X2']")
     PROFILE_IMAGE = (By.CSS_SELECTOR, ".profile__image")
 
 
