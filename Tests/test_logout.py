@@ -6,7 +6,7 @@ from selenium.webdriver.support import expected_conditions as EC
 
 class TestLogout:
 
-    def test_login_from_main_success(self, driver):
+    def test_logout_success(self, driver):
         driver.get(URLS["base"])
 
         driver.find_element(*LoginPageLocators.LOGIN_BUTTON_FROM_MAIN).click()
