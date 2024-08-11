@@ -28,10 +28,16 @@ class UserAccountPageLocators:
     LOGOUT_BUTTON = (By.XPATH, "//button[text()='Выйти']")
     CONSTRUCTOR_BUTTON = (By.XPATH, "//p[text()='Конструктор']")
     STELLAR_BURGERS_LOGO = (By.XPATH, "//div[@class='AppHeader_header__logo__2D0X2']")
-    PROFILE_IMAGE = (By.CSS_SELECTOR, ".profile__image")
 
 
 class ConstructorPageLocators:
-    BUN_TAB = (By.XPATH, "//tab[text()='Булки']")
-    SAUCES_TAB = (By.XPATH, "//tab[text()='Соусы']")
-    TOPPINGS_TAB = (By.XPATH, "//tab[text()='Начинки']")
+    BUN_TAB = (By.XPATH, "//span[text()='Булки']")
+    SAUCES_TAB = (By.XPATH, "//span[text()='Соусы']")
+    FILLING_TAB = (By.XPATH, "//span[text()='Начинки']")
+    BUN_ACTIVE_BUTTON = (
+        By.XPATH, "//span[text()='Булки']/parent::div[contains(@class, '2BEP')]")  # buns tab when selected
+    SAUCE_ACTIVE_BUTTON = (
+        By.XPATH, "//span[text()='Соусы']/parent::div[contains(@class, '2BEP')]")  # sauces tab when selected
+    FILLINGS_ACTIVE_BUTTON = (
+        By.XPATH, "//span[text()='Начинки']/parent::div[contains(@class, '2BEP')]")  # fillings tab when selected
+    H1_LOCATOR = (By.XPATH, '//h1')
