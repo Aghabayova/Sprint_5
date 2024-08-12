@@ -18,10 +18,10 @@ class LoginPageLocators:
     EMAIL_FIELD = (By.XPATH, "//input[@name='name']")
     PASSWORD_FIELD = (By.XPATH, "//input[@name='Пароль']")
     PLACING_ORDER_BUTTON = (By.XPATH, "//button[text()='Оформить заказ']")
-    LOGIN_BUTTON_FROM_REGISTRATION_FORM = (By.XPATH, "//p[contains(text(), 'Уже зарегистрированы?')]//a["
-                                                     "@class='Auth_link__1fOlj']")
-    LOGIN_BUTTON_FROM_RESTORE_PASSWORD_FORM = (By.XPATH, "//p[contains(text(), 'Вспомнили пароль?')]//a["
-                                                         "@class='Auth_link__1fOlj']")
+    LOGIN_BUTTON_FROM_REGISTRATION_FORM = (
+        By.XPATH, "//p[contains(text(), 'Уже зарегистрированы?')]//a[contains(@class, 'Auth_link')]")
+    LOGIN_BUTTON_FROM_RESTORE_PASSWORD_FORM = (
+        By.XPATH, "//p[contains(text(), 'Вспомнили пароль?')]//a[contains(@class, 'Auth_link')]")
 
 
 class UserAccountPageLocators:
@@ -41,3 +41,4 @@ class ConstructorPageLocators:
     FILLINGS_ACTIVE_BUTTON = (
         By.XPATH, "//span[text()='Начинки']/parent::div[contains(@class, '2BEP')]")  # fillings tab when selected
     H1_LOCATOR = (By.XPATH, '//h1')
+    H1_LOCATOR_TEXT = 'Соберите бургер'

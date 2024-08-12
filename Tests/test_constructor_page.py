@@ -41,7 +41,7 @@ class TestSwitchConstructorTabs:
         driver.get(URLS["base"])
 
         WebDriverWait(driver, 5).until(
-            EC.text_to_be_present_in_element(ConstructorPageLocators.H1_LOCATOR, 'Соберите бургер'))
+            EC.text_to_be_present_in_element(ConstructorPageLocators.H1_LOCATOR, ConstructorPageLocators.H1_LOCATOR_TEXT))
 
         # Click on Fillings tab
         WebDriverWait(driver, 5).until(EC.element_to_be_clickable(ConstructorPageLocators.FILLING_TAB)).click()
